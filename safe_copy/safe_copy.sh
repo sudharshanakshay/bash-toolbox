@@ -35,7 +35,7 @@ for FILE in "$COPY_DIR"/*; do
 		# make copy if the FILE doesn't exists
 		if [ ! -f "$CHECK_FILE" ]; then
 			echo "[+] Copying $(basename "$FILE") to $DEST_DIR"
-			cp "$FILE" "$DEST_FILE"
+			cp -u "$FILE" "$DEST_FILE"
 			check_success "Failed to copy $FILE"
 				
 		else 
