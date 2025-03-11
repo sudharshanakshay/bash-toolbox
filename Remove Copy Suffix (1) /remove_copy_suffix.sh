@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#read -p "Enter the directory path: " directory
-
-directory="/home/ohmkar/Pictures/Ufufigigifyffygdownload/"
+read -p "Enter the directory path: " directory
 
 if [[ ! -d "$directory" ]]; then
 echo "Directory does not exists."
